@@ -18,7 +18,11 @@ export class Engine {
         }
     }
 
-    // use
+    use() {
+        this.gl.useProgram(this.program);
+    }
 
-    // uniform 
+    uniform(name) {
+        return this.gl.getUniformLocation(this.program, name);
+    } 
 }
