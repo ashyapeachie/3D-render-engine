@@ -1,0 +1,28 @@
+/* 
+author: Aham
+filename: program.js
+description: program
+*/
+
+export class Program {
+    constructor(gl, vertexShader, fragmentShader) {
+        this.gl = gl;
+        this.program = gl.createProgram();
+
+        gl.attachShader(this.program, vertexShader.shader);
+        gl.attachShader(this.program, fragmentShader.shader);
+        gl.linkProgram(this.program);
+
+        if(!gl.getProgramParameter(this.program, gl.LINK_STATUS)) {
+            throw new Error("Program link error: " + gl.getProgramInfoLog(this.program));
+        }
+    }
+
+    use() {
+        this.gl.useProgram(this.program);
+    }
+
+    uniform(name) {
+        return this.gl.getUniformLocation(this.program, name);
+    } 
+}
