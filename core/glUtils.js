@@ -1,7 +1,7 @@
 /* 
 author: Aham
 filename: glUtils.js
-description: 
+description: ulility loader
 */
 
 export function createGLContext() {
