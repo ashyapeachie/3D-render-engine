@@ -1,5 +1,11 @@
 /* 
 author: Aham
 filename: shader.js
-description: 
+description: shader class
 */
+
+export class Shader {
+    constructor() {
+        
+    }
+}

@@ -4,9 +4,9 @@ filename: glUtils.js
 description: ulility loader
 */
 
-export function createGLContext() {
-    const gl = CanvasCaptureMediaStreamTrack.getContext();
-    if (!gl) throw new Error();
+export function createGLContext(canvas) {
+    const gl = canvas.getContext("webgl2");
+    if (!gl) throw new Error("WebGL2 not supported");
     return gl;
 }
 
