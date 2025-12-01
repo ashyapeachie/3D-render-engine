@@ -1,7 +1,19 @@
 /* 
 author: Aham
 filename: entity.js
-description: 
+description: entity class
 */
 
-// class Entity
+export class Entity {
+    constructor() {
+
+    }
+
+    update() {
+
+    }
+
+    draw() {
+        
+    }
+}
