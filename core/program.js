@@ -1,7 +1,7 @@
 /* 
 author: Aham
 filename: program.js
-description: program
+description: shader program / material binder
 */
 
 export class Program {
