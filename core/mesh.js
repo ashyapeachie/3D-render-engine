@@ -1,7 +1,7 @@
 /* 
 author: Aham
 filename: mesh.js
-description: 
+description: mesh class
 */
 
 // export class Mesh
